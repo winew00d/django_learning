@@ -8,8 +8,8 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
-def about1(request):
-    return render(request, 'main/about.html')
+def new_page (request):
+    return render (request, 'main/about.html')
 
-def about2(request):
-    return render(request, 'main/about.html')
+    def new_page (request):
+    return render (request, 'main/about.html')
