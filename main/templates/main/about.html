@@ -1,8 +1,11 @@
 {% extends 'main/layout.html' %}
-{% block title%} Старница о нас {% endblock %}
+{% block title%} {{title}} {% endblock %}
+
 {% block content %}
-DEUS EX EST SPHAERA CUIUS TOT SUNT CIRCUMFERENTIAE QUOT PUNCTA.
-Ista sequitur ex secunda, quia cum sit totus sine dimensione,
-et etiam dimensionis infinitae, non erit in sphaera suae essentiae extremum.
-Igitur non est in extremo punctus quin exterius sit circumferentia.
+<div class='features'>
+<h1> {{title}} </h1>
+    {% for elements in content %}
+        <p> {{elements}} </p>
+    {% endfor %}
+</div>
 {% endblock %}
