@@ -1,8 +1,18 @@
 {% extends 'main/layout.html' %}
 {% block title%} NEWS {% endblock %}
 {% block content%}
-<div class= "features">
+<div class='features'>
+<div class="alert alert-primary" role="alert">
+    
+ 
     <h1>NEWS TYT</h1>
-    <p>NOVOSTI</p>
+    <p>
+        {%for elements in news%}
+        <p>{{elements.title}}</p>
+        {%endfor%}
+    </p>
+  
+</div>
 </div>
 {% endblock %}
+
